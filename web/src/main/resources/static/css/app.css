@@ -1,0 +1,90 @@
+html, body {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+}
+
+/**
+    reset
+ */
+pre {
+    margin: 0;
+    padding: 0;
+    white-space: pre-line;
+}
+
+.gic-app {
+    width: 80%;
+    margin: auto;
+}
+
+.container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .panels {
+        width: 100%;
+        display: flex;
+
+        .seats {
+            margin-right: 20px;
+        }
+    }
+
+}
+
+.center {
+    text-align: center;
+}
+
+.hide {
+    display: none;
+}
+
+.btn {
+    width: 120px;
+    padding: 4px;
+    font-size: 1rem;
+    background: #336c9a;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+
+    &[disabled] {
+        background: #a7afb5;
+        cursor: not-allowed;
+    }
+}
+
+.seats {
+    display: flex;
+    flex-direction: column;
+
+    .row {
+
+        display: flex;
+        flex-direction: row;
+
+        .seat {
+            border: 1px solid black;
+            min-width: 60px;
+            min-height: 60px;
+            text-align: center;
+            padding: 10px;
+
+            &.empty {
+                background: #33999a;
+            }
+
+            &.bookd {
+                background: #8f0e20;
+            }
+
+            &.resrv {
+                background: #ff8000;
+            }
+        }
+    }
+}

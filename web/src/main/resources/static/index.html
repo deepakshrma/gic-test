@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>GIC Cinemas</title>
+    <link type="text/css" rel="stylesheet" href="css/app.css">
+</head>
+<body>
+<div class="gic-app">
+    <div class="container">
+        <h1>Welcome to GIC Cinemas</h1>
+        <button class="btn" onclick="refresh()">Refresh</button>
+        <hr/>
+        <div class="panels">
+            <div class="seats " id="seats"></div>
+            <div style="width: 300px">
+                <h2> Menu</h2>
+                <div class="menu">
+                    <select name="option" id="menu-option">
+                        <option value="1">Book ticket</option>
+                        <option value="2">Check ticket</option>
+                    </select>
+                    <input placeholder="Enter number of tickets" type="number" id="ticket-count" min="0" value="2"/>
+                    <input placeholder="Enter ticket id" type="text" id="ticketid" class="hide"/>
+                    <input type="text" id="booking_id" class="hide"/>
+                </div>
+                <hr/>
+                <div class="control">
+                    <button class="btn reserve" onclick="reserve()">Reserve</button>
+                    <button class="btn booknow" onclick="booknow()">Book now</button>
+                    <button class="btn checknow hide" onclick="checknow()">Check</button>
+                </div>
+                <pre class="status"></pre>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="js/app.js"></script>
+</body>
+</html>

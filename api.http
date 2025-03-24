@@ -1,0 +1,26 @@
+# GIC APIs
+
+@host=localhost
+@port=8080
+
+###
+GET http://{{host}}:{{port}}/booking/seats
+
+###
+
+GET http://{{host}}:{{port}}/booking/seats/GIC00001
+
+###
+
+POST http://{{host}}:{{port}}/booking/reserve
+Content-Type: application/json
+
+{
+  "count": 4,
+  "start": ""
+}
+
+###
+
+PATCH http://{{host}}:{{port}}/booking/bookit/GIC00001
+Content-Type: application/json
