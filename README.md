@@ -3,6 +3,11 @@
 __GIC Cinemas Booking System is a Command Line Interface (CLI) and Web-based application that allows users to book seats
 conveniently.__
 
+## Download as zip
+
+[deepak_vishwakarma_gic_sub_20250323.zip](deepak_vishwakarma_gic_sub_20250323.zip)
+
+
 ## Directory Structure
 
 ```
